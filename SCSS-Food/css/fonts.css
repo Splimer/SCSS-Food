@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Grand Hotel";
+  font-weight: 400;
+  font-style: normal;
+  src: local("GrandHotel"),
+    url("../fonts/GrandHotel-Regular.woff2") format("woff2"),
+    url("../fonts/GrandHotel-Regular.woff") format("woff"),
+    url("../fonts/GrandHotel-Regular.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-style: normal;
+  src: local("MontserratAlternates"),
+    url("../fonts/MontserratAlternates-Regular.woff2") format("woff2"),
+    url("../fonts/MontserratAlternates-Regular.woff") format("woff"),
+    url("../fonts/MontserratAlternates-Regular.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Montserrat Alternates"),
+    url("../fonts/MontserratAlternates-Bold.woff2") format("woff2"),
+    url("../fonts/MontserratAlternates-Bold.woff") format("woff"),
+    url("../fonts/MontserratAlternates-Bold.eot") format("eot");
+  font-display: swap;
+}

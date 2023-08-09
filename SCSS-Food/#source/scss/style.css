@@ -1,0 +1,265 @@
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Montserrat Alternates, sans-serif, sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 20px 60px;
+  white-space: nowrap;
+  border-radius: 4px;
+  background: #ffc200;
+  transition: all 0.3s;
+}
+.button:hover {
+  transform: scale(1.03);
+}
+
+.header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background: url("/images/test-1.png") no-repeat center/cover, #2f2f2f;
+  padding-bottom: 210px;
+}
+
+.header__top-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin: 0 15px 15px -12px;
+  transition: all 0.3s;
+}
+.header__logo:hover {
+  transform: scale(1.04);
+}
+
+.header__nav {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Montserrat Alternates, sans-serif, sans-serif;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-item {
+  margin-right: 70px;
+}
+.header__nav-item:last-child {
+  margin-right: 15px;
+}
+
+.header__nav-link {
+  transition: all 0.3s;
+}
+.header__nav-link:hover {
+  color: #ffc200;
+  transform: scale(1.04);
+}
+
+.header__body {
+  flex-grow: 1;
+}
+
+.header__body-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 100%;
+}
+
+.header__content {
+  margin-top: 40px;
+  margin-right: 130px;
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: 125px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Grand Hotel, sans-serif, sans-serif;
+  color: #ffc200;
+  margin-bottom: 30px;
+}
+
+.header__subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Montserrat Alternates, sans-serif, sans-serif;
+  color: #ffffff;
+  max-width: 630px;
+}
+
+.main__seller {
+  margin-top: 50px;
+  margin-bottom: 140px;
+}
+
+.main__taste {
+  padding-top: 150px;
+}
+
+.seller__inner {
+  margin-bottom: 75px;
+}
+
+.seller__title {
+  font-weight: 400;
+  font-size: 75px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Grand Hotel, sans-serif, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.seller__subtitle {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Montserrat Alternates, sans-serif, sans-serif;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.seller__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__img-1 {
+  width: 245px;
+  height: 254px;
+  border-radius: 50%;
+  background: url("/images/sellers/card-1.png") 50% 50%/cover no-repeat;
+}
+
+.menu__img-2 {
+  width: 245px;
+  height: 254px;
+  border-radius: 50%;
+  background: url("/images/sellers/card-2.png") 50% 50%/cover no-repeat;
+}
+
+.menu__img-3 {
+  width: 245px;
+  height: 254px;
+  border-radius: 50%;
+  background: url("/images/sellers/card-3.png") 50% 50%/cover no-repeat;
+}
+
+.seller__menu-1, .seller__menu-2, .seller__menu-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 245px;
+}
+
+.seller__menu-title {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Grand Hotel, sans-serif, sans-serif;
+}
+
+.seller__menu-subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Montserrat Alternates, sans-serif, sans-serif;
+  text-align: center;
+}
+
+.taste {
+  background-image: url(/images/decor/design-3.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.taste__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.taste__img-box {
+  margin-right: 15px;
+  margin-bottom: 80px;
+}
+
+.taste__img {
+  width: 475px;
+  height: 482px;
+  border-radius: 50%;
+  background: url("/images/sellers/order.png") 50% 50%/cover no-repeat;
+}
+
+.taste__content {
+  margin: auto 90px auto 0;
+}
+
+.taste__title {
+  font-weight: 400;
+  font-size: 100px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Grand Hotel, sans-serif, sans-serif;
+  color: #ffc200;
+  margin-bottom: 10px;
+}
+
+.taste__subtitle {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: Montserrat Alternates, sans-serif, sans-serif;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=style.css.map */

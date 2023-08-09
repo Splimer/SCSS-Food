@@ -1,0 +1,1150 @@
+
+$bgColor-1: #2f2f2f;
+$bgColor-2: #ffffff;
+$bgColor-3: #ffd345;
+
+$color-yellow: #ffc200;
+$color-black: #333333;
+$color-white: #ffffff;
+
+$Monst: Montserrat Alternates, sans-serif;
+$Grand: Grand Hotel, sans-serif;
+
+$breakpoint_1300: 1300px;
+$breakpoint_1200: 1200px;
+$breakpoint_1100: 1100px;
+$breakpoint_1000: 1000px;
+$breakpoint_900: 900px;
+$breakpoint_700: 700px;
+$breakpoint_550: 550px;
+$breakpoint_450: 450px;
+
+
+@mixin font ($f-weight, $f-size, $f-family) {
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: $f-family, sans-serif;
+}
+@mixin color-white {
+  color: #ffffff;
+}
+@mixin color-yellow {
+  color: #ffc200;
+}
+@mixin color-black {
+  color: #333333;
+}
+
+
+// =========================== ПРЕСЕТЫ-МИКСИНЫ =========================
+body {
+  
+}
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+}
+
+.button {
+  @include font (700, 19px, $Monst);
+  display: inline-block;
+  text-transform: uppercase;
+  color: $color-black;
+  padding: 20px 60px;
+  white-space: nowrap;
+  border-radius: 4px;
+  background: $color-yellow;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+// ================================ HEADER ==================================
+.header {
+  // height: 100vh;
+  height: 796px;
+  display: flex;
+  flex-direction: column;
+  color: $color-white;
+  background: url("/images/test-1.png") no-repeat center / cover,
+  $bgColor-1;
+  // background-size: 100% 100%;
+}
+
+.header__top {
+}
+
+.header__top-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  margin: 0 15px 15px -12px;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+}
+
+.header__nav {
+  @include font (400, 25px, $Monst);
+}
+.header__nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav-item {
+  margin-right: 70px;
+
+  &:last-child{
+    margin-right: 15px;
+  }
+
+}
+.header__nav-link {
+  transition: all .3s;
+
+  &:hover {
+    color: $color-yellow;
+    transform: scale(1.04);
+  }
+}
+.header__top-box {
+}
+.header__top-btn {
+}
+
+.header__body {
+  flex-grow: 1;
+}
+.header__body-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 100vh;
+}
+.header__content {
+  margin-top: 100px;
+  margin-right: 130px;
+}
+.header__title {
+  @include font (400, 125px, $Grand);
+  color: $color-yellow;
+  margin-bottom: 30px;
+}
+.header__subtitle {
+  @include font (400, 30px, $Monst);
+  color: $color-white;
+  max-width: 630px;
+  margin-bottom: 40px;
+}
+.header__body-box {
+}
+.header__body-btn {
+}
+
+// ================================ MAIN ==================================
+
+.main {
+}
+
+.main__seller {
+  margin-top: 50px;
+  margin-bottom: 140px;
+  // height: 100vh;
+}
+
+.main__taste {
+  padding-top: 150px;
+  height: 100%;
+}
+
+.main__stat {
+  // height: 50vh;
+  padding-bottom: 280px;
+}
+
+.main__grill {
+  padding-bottom: 210px;
+}
+.main__fields {
+  height: 796px;
+}
+.main__subs {
+  height: 725px;
+}
+// =========================== SECTION-SELLER ==================================
+.seller {
+}
+.seller__inner {
+  margin-bottom: 75px;
+}
+.seller__title {
+  @include font (400, 75px, $Grand);
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.seller__subtitle {
+  @include font (400, 25px, $Monst);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto 70px auto;
+}
+.seller__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__img-1 {
+  width: 245px;
+  height: 254px;
+  border-radius: 50%;
+  background: url("/images/sellers/card-1.png") 50% 50% / cover no-repeat;
+}
+.menu__img-2 {
+  width: 245px;
+  height: 254px;
+  border-radius: 50%;
+  background: url("/images/sellers/card-2.png") 50% 50% / cover no-repeat;
+}
+.menu__img-3 {
+  width: 245px;
+  height: 254px;
+  border-radius: 50%;
+  background: url("/images/sellers/card-3.png") 50% 50% / cover no-repeat;
+}
+
+.seller__menu-1, .seller__menu-2, .seller__menu-3  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 245px;
+}
+
+.seller__menu-1 {
+}
+.seller__menu-2 {
+}
+.seller__menu-3 {
+}
+.seller__menu-title {
+  @include font(400, 42px, $Grand);
+}
+.seller__menu-subtitle {
+  @include font(400, 17px, $Monst);
+  text-align: center;
+}
+
+// =========================== SECTION-TASTE ==================================
+.taste {
+  background-image: url(/images/decor/design-3.png);
+  background-repeat: no-repeat;
+  background-position: top 20px left -250px;
+  background-size: 130%;
+}
+
+
+.taste__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.taste__img-box {
+  margin-right: 15px;
+  margin-bottom: 80px;
+}
+.taste__img {
+  width: 475px;
+  height: 482px;
+  border-radius: 50%;
+  background: url("/images/sellers/order.png") 50% 50% / cover no-repeat;
+}
+.taste__content {
+  margin: auto 90px auto 0;
+}
+.taste__title {
+  @include font(400, 100px, $Grand);
+  color: $color-yellow;
+  margin-bottom: 10px;
+  white-space: nowrap
+}
+.taste__subtitle {
+  @include font(400, 25px, $Monst);
+  color: $color-white;
+  margin-bottom: 50px;
+  max-width: 560px;
+}
+.taste__btn {
+}
+
+// =========================== SECTION-STATISTICS ==================================
+
+.stat {
+  background-image: url(/images/test-3.png);
+  // background-repeat: no-repeat;
+  // background-position: top;
+}
+.stat__inner {
+}
+.stat__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.stat__title {
+  @include font (400, 100px, $Grand);
+  color: $color-yellow;
+}
+.stat__subtitle {
+  @include font (400, 25px, $Monst);
+  color: $color-white;
+  text-align: center;
+  max-width: 830px;
+}
+.stat__panel {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.stat__panel-card {
+  display: inline-block;
+  justify-content: center;
+  width: 230px;
+  height: 230px;
+  border: 3px solid $color-white;
+  border-radius: 50%;
+  pointer-events:none;
+  position: relative;
+  h2 {
+    @include font(700, 50px, $Monst);
+    color: $color-yellow;
+    margin-top: 60px;
+  }
+  h1 {
+    @include font(700, 29px, $Monst);
+    color: $color-white;
+  }
+}
+// =========================== SECTION-GRILL ==================================
+.grill {
+  // background-image: url(/images/decor/design-4.png);
+  // background-repeat: no-repeat;
+  // background-position: bottom 0px center 0px;
+  // background-size: 100% 100%;
+
+  background: url(/images/decor/design-4.png) no-repeat center / cover;
+  background-position: bottom 150px left -300px;
+  background-size: 130%;
+}
+.grill__inner {
+  display: flex;
+  flex-direction: row;
+}
+.grill__content {
+}
+.grill__title {
+  @include font(400, 100px, $Grand);
+  color: $color-yellow;
+  margin-bottom: 10px;
+}
+.grill__subtitle {
+  @include font(400, 25px, $Monst);
+  color: $color-white;
+  margin-bottom: 50px;
+}
+.grill__btn {
+}
+.button {
+}
+.grill__img-box {
+}
+.grill__img {
+  width: 475px;
+  height: 482px;
+  border-radius: 50%;
+  background: url(/images/sellers/chicken-grill.png) 50% 50%/cover no-repeat;
+}
+
+// =========================== SECTION-GRILL ==================================
+.fields {
+  background: url("/images/test-4.png") no-repeat center / 100%;
+}
+.fields__inner {
+}
+.fields__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  h2 {
+    @include font(400, 45px, $Monst);
+    margin-top: 260px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    @include font(400, 74px, $Grand);
+  }
+}
+// =========================== SECTION-SUBS ==================================
+.subs {
+  background: url("/images/decor/design-5.png") no-repeat center / 70%;
+}
+.subs__inner {
+}
+.subs__content {
+  padding-top: 150px;
+  text-align: center;
+  margin-bottom: 80px;
+  h2 {
+    @include font(400, 100px, $Grand);
+  }
+  h1 {
+    @include font(400, 30px, $Monst);
+    display: inline-flex;
+    max-width: 840px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.subs__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.subs__form-inpit {
+  width: 550px;
+  height: 62px;
+  display: block;
+  border-radius: 4px;
+  padding: 15px 13px;
+  box-shadow: 0px 0px 30px 1px #0000001c;
+  &::placeholder{
+    color: #a6a6a6;
+    font-size: 25px;
+  }
+}
+.subs__form-btn {
+  height: 62px;
+}
+//============================== FOOTER =======================================
+.footer {
+  background-color: $bgColor-1;
+}
+.footer__content {
+  padding: 250px 0 240px;
+  color: $color-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__col-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__col {
+  margin-right: 15px;
+  // &:last-child {
+  //   margin-right: 15px;
+  // }
+}
+.footer__title {
+  @include font(700, 25px, $Monst);
+  margin-bottom: 25px;
+}
+.footer__subtitle {
+  @include font(400, 24px, $Monst);
+  margin-bottom: 30px;
+  max-width: 460px;
+}
+.footer__socials {
+  display: flex;
+  flex-direction: row;
+}
+.footer__socials-item {
+  margin-right: 14px;
+  &:last-child {
+    margin: 0;
+  }
+}
+.footer__socials-link {
+}
+.footer__list {
+}
+.footer__col-item {
+  @include font(400, 24px, $Monst);
+  margin-bottom: 20px;
+  white-space: nowrap;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.footer__item-link {
+  transition: all .3s;
+  &:hover {
+    color: $color-yellow;
+  }
+}
+//================================= MEDIA ==================================
+//================================= MEDIA ==================================
+// ================================ 1300  ==================================
+@media (max-width: $breakpoint_1300) {
+  .header__content {
+    margin-right: 80px;
+  }
+}
+// ================================ 1200  ==================================
+@media (max-width: $breakpoint_1200) {
+  .header__content {
+    margin-right: 10px;
+  }
+
+  .header__subtitle {
+    max-width: 620px;
+  }
+  .header__nav-item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+// ================================ 1100  ==================================
+@media (max-width: $breakpoint_1100) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.349);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+  }
+  .overlay--show {
+    visibility: visible;
+    opacity: 1;
+  }
+  .burger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 150;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+    background-color: #fff;
+    span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: $color-black;
+      border-radius: 3px;
+      margin: 4px 0px;
+      transition: all .3s;
+    }
+    p {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: $color-black;
+      border-radius: 3px;
+      transition: all .3s;
+    }
+  }
+
+  .burger--follow {
+    top: 15px;
+    right: 15px;
+    box-shadow: 0 1px 8px #818181;
+    background-color: #fff;
+  }
+
+  .burger--active {
+    background: $bgColor-1;
+    .burger-cross::before{
+      content: none;
+    }
+    .burger-cross::after{
+      content: none;
+    }
+    span {
+      transform: rotate(45deg);
+      background-color: $bgColor-2;
+    }
+    p {
+      transform: rotate(-90deg);
+      background-color: $bgColor-2;
+    }
+  }
+
+  // .burger-cross::before,
+  // .burger-cross::after {
+  //   content: "";
+  //   display: block;
+  //   width: 30px;
+  //   height: 4px;
+  //   background-color: $color-black;
+  //   border-radius: 3px;
+  //   transition: all .3s;
+  // }
+
+  // .burger--active .burger-cross::before{
+  //   content: none;
+  // }
+
+  // .burger--active .burger-cross::after{
+  //   content: none;
+  // }
+
+  // .burger--active span {
+  //   transform: rotate(45deg);
+  //   background-color: $bgColor-2;
+  // }
+
+  // .burger--active p {
+  //   transform: rotate(-90deg);
+  //   background-color: $bgColor-2;
+  // }
+
+.burger-cross {
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: $color-black;
+    border-radius: 3px;
+    transition: all .3s;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: $color-black;
+    border-radius: 3px;
+    transition: all .3s;
+  }
+}
+  .header__top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $bgColor-1;
+    z-index: 100;
+    min-width: 320px;
+    transform: translateX(100%);
+    transition: all .3s;
+  }
+
+  .header__top--open {
+    transform: translateX(0%);
+  }
+
+  .header__top-inner {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 100px 0;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__nav-item {
+    margin: 0 0;
+    padding: 10px 0;
+  }
+
+  .header__content {
+    margin-right: 0px;
+  }
+
+  .header__subtitle {
+    max-width: 580px;
+  }
+
+  .main__grill {
+    padding-bottom: 70px;
+  }
+
+  .grill {
+    background-position: bottom 70px left -200px;
+    background-size: 130%;
+  }
+
+  .main__fields {
+    height: 700px;
+  }
+
+  .main__subs {
+    height: 600px;
+  }
+
+  .subs__content {
+    padding-top: 60px;
+  }
+
+  .footer__content {
+    padding: 140px 0 130px;
+  }
+
+  .footer__title{
+
+  }
+
+  .footer__subtitle {
+    font-size: 20px;
+  }
+
+  .footer__col-item {
+    font-size: 20px;
+  }
+}
+// ================================ 1000  ==================================
+@media (max-width: $breakpoint_1000) {
+
+  .header__title {
+    font-size: 110px;
+  }
+  .header__subtitle {
+    max-width: 520px;
+    font-size: 28px;
+  }
+
+  .main__seller {
+    margin-bottom: 70px;
+  }
+
+  .taste {
+    background-position: top 100px left -250px;
+  }
+  .taste__img {
+    width: 300px;
+    height: 310px;
+  }
+
+  .main__stat {
+    padding: 100px 0 180px;
+  }
+
+  .stat__panel-card {
+    width: 190px;
+    height: 200px;
+    h2 {
+      margin-top: 40px;
+    }
+  }
+
+  .grill {
+    background-position: bottom 20px left -200px;
+  }
+
+  .grill__img {
+    width: 300px;
+    height: 310px;
+  }
+
+  .fields__content {
+    h2 {
+      font-size: 35px;
+      margin-top: 230px;
+      margin-bottom: 20px;
+    }
+  } 
+
+  .footer__content {
+    padding: 100px 0 90px;
+}
+
+.footer__col-row {
+  justify-content: space-between;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer__subtitle {
+  max-width: 100%;
+}
+.footer__socials {
+  margin-bottom: 25px;
+}
+}
+// ================================ 900  ==================================
+@media (max-width: $breakpoint_900) {
+  .header__content {
+    margin-top: 170px;
+  }
+  .header__title {
+    font-size: 90px;
+    margin-bottom: 15px;
+  }
+  .header__subtitle {
+    max-width: 420px;
+    font-size: 22px;
+  }
+
+  .seller__subtitle {
+  }
+
+  .taste {
+    background-position: top 100px left -150px;
+  }
+  .taste__img-box {
+    margin-right: 35px;
+  }
+  .taste__title {
+    font-size: 75px;
+  }
+  .taste__subtitle {
+    font-size: 23px;
+    max-width: 500px;
+  }
+  .menu__img-1 {
+    width: 175px;
+    height: 184px;
+  }
+  .menu__img-2 {
+    width: 175px;
+    height: 184px;
+  }
+  .menu__img-3 {
+    width: 175px;
+    height: 184px;
+  }
+
+  .main__stat {
+    padding: 100px 0 110px;
+  }
+
+  .stat__heading {
+    margin-bottom: 60px;
+  }
+
+  .stat__title {
+    font-size: 75px;
+  }
+  .stat__subtitle {
+    font-size: 23px;
+  }
+
+  .stat__panel-card {
+    width: 160px;
+    height: 170px;
+    h2 {
+      margin-top: 35px;
+      font-size: 35px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .grill {
+    background-position: bottom 20px left -120px;
+  }
+
+  .grill__title {
+    font-size: 75px;
+  }
+  .grill__subtitle {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+
+  .main__fields {
+    height: 450px;
+  }
+
+  .fields__content 
+  h2 {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  
+  .subs__content {
+  h2 {
+    font-size: 74px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  }
+}
+
+// ================================ 700  ==================================
+@media (max-width: $breakpoint_700) {
+  .header__title {
+    font-size: 70px;
+    margin-bottom: 15px;
+  }
+  .header__subtitle {
+      max-width: 350px;
+      font-size: 21px;
+  }
+  .seller__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .menu__img {
+    width: 275px;
+    height: 284px;
+  }
+
+  .taste__img {
+    width: 200px;
+    height: 210px;
+  }
+  .taste__title {
+    font-size: 55px;
+  }
+  .taste__subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .main__stat {
+    padding: 100px 0 60px;
+  }
+  .stat__title {
+    font-size: 55px;
+  }
+  .stat__subtitle {
+    font-size: 20px;
+  }
+  .stat__panel-card {
+    width: 110px;
+    height: 120px;
+    h2 {
+      margin-top: 25px;
+      font-size: 25px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .grill {
+    background-position: bottom 0px left -100px;
+  }
+  .grill__title {
+    font-size: 55px;
+  }
+  .grill__subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .grill__img {
+    width: 200px;
+    height: 210px;
+  }
+  .main__fields {
+    height: 350px;
+  }
+  .fields__content {
+  h2 {
+    font-size: 25px;
+    margin-top: 70px;
+    // margin-bottom: 10px;
+  }
+  .fields__content h1 {
+    font-weight: 400;
+    font-size: 65px;
+  }
+}
+.main__subs {
+  height: 500px;
+  }
+.subs__content {
+  padding-top: 20px;
+  }
+
+  .subs__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .subs__form-inpit {
+    width: auto;
+    margin-bottom: 25px;
+  }
+}
+// ================================ 550  ==================================
+@media (max-width: $breakpoint_550) {
+.taste {
+  background-position: top 45px left -410px;
+  background-size: 200%;
+}
+.taste__img-box {
+  margin: 0;
+}
+.taste__img {
+  display: none;
+}
+.taste__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.taste__subtitle {
+  text-align: center;
+}
+.main__stat {
+  padding: 50px 0 60px;
+  }
+.stat__panel-card {
+  width: 90px;
+  height: 100px;
+  h2 {
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+}
+
+.grill {
+  background-position: bottom 50px left -60px;
+}
+.grill__img {
+  display: none;
+}
+.main__fields {
+  height: 240px;
+}
+.fields__content {
+  h2 {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  h1 {
+    font-size: 54px;
+  }
+}
+.subs__content {
+  margin-bottom: 40px;
+  h2 {
+    font-size: 55px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.footer__content {
+  padding: 80px 0 80px;
+}
+.footer__socials {
+  margin-bottom: 0;
+}
+.footer__col-row {
+  flex-direction: column;
+}
+.footer__col-col {
+    margin-bottom: 25px;
+}
+.footer__list {
+  display: none;
+}
+.footer__col-item {
+  &:last-child {margin-bottom: 20px;}
+}
+}
+// ================================ 450  ==================================+
+@media (max-width: $breakpoint_450) {
+.header__content {
+  text-align: center;
+}
+.taste {
+  background-position: top 55px left -290px;
+  background-size: 230%;
+}
+.stat__panel {
+  // flex-direction: column;
+  // align-items: center;
+}
+.stat__heading {
+  margin-bottom: 30px;
+}
+.stat__panel-card {
+  width: 60px;
+  height: 70px;
+  h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 10px;
+  }
+}
+.grill {
+  background-position: bottom 0px left -110px;
+  background-size: 250%;
+}
+.grill__content {
+  text-align: center;
+}
+.fields__content {
+  h2 {
+    font-size: 15px;
+    margin-top: 55px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+}
+}
